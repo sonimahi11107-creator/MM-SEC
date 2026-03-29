@@ -169,3 +169,68 @@ body {
   background: #f4f7fb;
 }
 
+<!-- Login form container -->
+.login-container {
+  max-width: 400px;
+  margin: 100px auto;
+  padding: 30px;
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}   
+ 
+
+/* ===== CARD UI ===== */
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+/* Each Card */
+.card {
+    background: white;
+    padding: 15px;
+    width: 180px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    text-align: center;
+    transition: 0.3s;
+}
+
+/* Hover effect */
+.card:hover {
+    transform: translateY(-5px);
+}
+
+/* Title */
+.card h3 {
+    margin: 10px 0;
+    color: #2c3e50;
+}
+
+/* Icon */
+.card span {
+    font-size: 30px;
+}
+/* ===== CARD IMAGE STYLE ===== */
+
+.card {
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.card img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 10px;
+}
+
+/* Hover effect */
+.card:hover {
+    transform: translateY(-5px);
+    background: #f0f8ff;
+}
