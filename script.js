@@ -105,19 +105,19 @@ const careerData = {
     ],
 
     arts : [
-        {name: "Graphic Designer", image: "https://cdn-icons-png.flaticon.com/512/3063/3063821.png", page: "arts\\graphic.html"},    
-        {name: "Animator", image: "https://cdn-icons-png.flaticon.com/512/190/190411.png", page: "arts\\animator.html"},
-        {name: "Photographer", image: "https://cdn-icons-png.flaticon.com/512/2972/2972185.png", page: "arts\\photographer.html"},
-        {name: "Fashion Designer", image: "https://cdn-icons-png.flaticon.com/512/2331/2331970.png", page: "arts\\fashion.html"},
-        {name: "Interior Designer", image: "https://cdn-icons-png.flaticon.com/512/3135/3135755.png", page: "arts\\interior.html"}
+        {name: "Graphic Designer", image: "https://cdn-icons-png.flaticon.com/256/12401/12401337.png", page: "arts\\graphic.html"},    
+        {name: "Animator", image: "https://cdn-icons-png.flaticon.com/128/5261/5261267.png", page: "arts\\animator.html"},
+        {name: "Photographer", image: "https://cdn-icons-png.flaticon.com/256/4683/4683591.png", page: "arts\\photographer.html"},
+        {name: "Fashion Designer", image: "https://cdn-icons-png.flaticon.com/256/7356/7356894.png", page: "arts\\fashion.html"},
+        {name: "Interior Designer", image: "https://cdn-icons-png.flaticon.com/128/2789/2789627.png", page: "arts\\interior.html"}
     ],
     
     defence : [
-        {name: "Army Officer", image: "https://cdn-icons-png.flaticon.com/512/3063/3063821.png", page: "army.html"},    
-        {name: "Navy Officer", image: "https://cdn-icons-png.flaticon.com/512/190/190411.png", page: "navy.html"},  
-        {name: "Air Force Officer", image: "https://cdn-icons-png.flaticon.com/512/2972/2972185.png", page: "defence\\airforce.html"},
-        {name: "Defense Scientist", image: "https://cdn-icons-png.flaticon.com/512/2331/2331970.png", page: "defence\\defenseScientist.html"},
-        {name: "Intelligence Officer", image: "https://cdn-icons-png.flaticon.com/512/3135/3135755.png", page: "defence\\intelligence.html"}
+        {name: "Army Officer", image: "https://cdn-icons-png.flaticon.com/256/10823/10823976.png", page: "army.html"},    
+        {name: "Navy Officer", image: "https://cdn-icons-png.flaticon.com/128/5098/5098602.png", page: "navy.html"},  
+        {name: "Air Force Officer", image: "https://cdn-icons-png.flaticon.com/256/6456/6456176.png", page: "defence\\airforce.html"},
+        {name: "Defense Scientist", image: "https://cdn-icons-png.flaticon.com/128/16962/16962005.png", page: "defence\\defenseScientist.html"},
+        {name: "Intelligence Officer", image: "https://cdn-icons-png.flaticon.com/128/13385/13385887.png", page: "defence\\intelligence.html"}
     ],
 
     business : [

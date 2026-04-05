@@ -310,8 +310,8 @@ body {
     min-height: 420px;
     border-radius: 30px;
     overflow: hidden;
-    box-shadow: 0 32px 88px rgba(111, 55, 176, 0.16);
-    background: linear-gradient(180deg, #ffffff 0%, #f7edff 100%);
+    box-shadow: none;
+    background: transparent;
 }
 
 .animator-page .container {
