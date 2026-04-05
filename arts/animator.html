@@ -1,6 +1,94 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        
-    </head>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Animator Career</title>
+
+<link rel="stylesheet" href="../style.css">
+
+<!-- Lottie -->
+<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+</head>
+
+<body class="animator-page">
+
+<!-- HEADER -->
+<header class="hero">
+
+    <div class="hero-left">
+        <h1>🎬 Become an Animator</h1>
+        <p>Design characters. Create stories. Bring imagination to life.</p>
+
+        <button class="cta-btn">Start Journey 🚀</button>
+    </div>
+
+    <div class="hero-right">
+        <lottie-player 
+            src="https://assets2.lottiefiles.com/packages/lf20_kyu7xb1v.json"
+            background="transparent"
+            speed="1"
+            loop autoplay>
+        </lottie-player>
+    </div>
+
+</header>
+
+<!-- MAIN -->
+<section class="container">
+
+    <!-- INTRO -->
+    <div class="card reveal">
+        <h2>🧭 Introduction</h2>
+        <p>
+            Animation is a creative field where you design motion and bring ideas to life 
+            using tools like Blender, Maya, and After Effects.
+        </p>
+    </div>
+
+    <!-- TABS -->
+    <div class="card reveal">
+        <h2>🎯 Animation Fields</h2>
+
+        <div class="tabs">
+            <div class="tab active" onclick="showTab(event,'t1')">2D</div>
+            <div class="tab" onclick="showTab(event,'t2')">3D</div>
+            <div class="tab" onclick="showTab(event,'t3')">VFX</div>
+            <div class="tab" onclick="showTab(event,'t4')">Motion</div>
+        </div>
+
+        <div id="t1" class="content active">
+            <p>2D animation is used in cartoons and storytelling videos.</p>
+        </div>
+
+        <div id="t2" class="content">
+            <p>3D animation is used in movies, games, and realistic visuals.</p>
+        </div>
+
+        <div id="t3" class="content">
+            <p>VFX adds cinematic effects like explosions and CGI.</p>
+        </div>
+
+        <div id="t4" class="content">
+            <p>Motion graphics are used in ads and UI animations.</p>
+        </div>
+    </div>
+
+    <!-- SKILLS -->
+    <div class="card reveal">
+        <h2>🛠 Skills Required</h2>
+        <p>Creativity, storytelling, Blender, After Effects, patience.</p>
+    </div>
+
+    <!-- BUTTON -->
+    <div class="card center reveal">
+        <button onclick="startJourney()">Get Started 🚀</button>
+    </div>
+
+</section>
+
+<script src="../script.js"></script>
+
+</body>
 </html>

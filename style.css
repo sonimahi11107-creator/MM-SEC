@@ -234,3 +234,388 @@ body {
     transform: translateY(-5px);
     background: #f0f8ff;
 }
+/* =========================
+   🎬 ANIMATOR PAGE ONLY
+========================= */
+
+.animator-page {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: #f8f1ff;
+    color: #2f1f47;
+}
+
+.animator-page .hero {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 32px;
+    padding: 68px 10%;
+    background: linear-gradient(135deg, #fef4ff 0%, #f2d9ff 100%);
+    border-radius: 34px;
+    box-shadow: 0 34px 90px rgba(118, 52, 153, 0.12);
+    margin: 40px auto 0;
+    max-width: 1180px;
+}
+
+.animator-page .hero-left {
+    flex: 1 1 460px;
+    max-width: 560px;
+}
+
+.animator-page .hero-left h1 {
+    font-size: clamp(2.8rem, 4vw, 4rem);
+    margin-bottom: 20px;
+    line-height: 0.98;
+    letter-spacing: -0.04em;
+    color: #2c153f;
+}
+
+.animator-page .hero-left p {
+    margin-bottom: 30px;
+    font-size: 1.05rem;
+    line-height: 1.85;
+    color: #5f4a75;
+    max-width: 580px;
+}
+
+.animator-page .cta-btn {
+    padding: 16px 34px;
+    border-radius: 999px;
+    border: none;
+    background: linear-gradient(135deg, #8f4bff 0%, #d37fff 100%);
+    color: #ffffff;
+    font-weight: 700;
+    cursor: pointer;
+    box-shadow: 0 20px 45px rgba(143, 75, 255, 0.22);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.animator-page .cta-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 26px 52px rgba(143, 75, 255, 0.28);
+}
+
+.animator-page .hero-right {
+    flex: 1 1 420px;
+    display: flex;
+    justify-content: center;
+    min-width: 320px;
+}
+
+.animator-page .hero-right lottie-player {
+    width: 100%;
+    max-width: 520px;
+    min-height: 420px;
+    border-radius: 30px;
+    overflow: hidden;
+    box-shadow: 0 32px 88px rgba(111, 55, 176, 0.16);
+    background: linear-gradient(180deg, #ffffff 0%, #f7edff 100%);
+}
+
+.animator-page .container {
+    max-width: 1100px;
+    margin: 40px auto 60px;
+    padding: 0 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 24px;
+}
+
+.animator-page .card {
+    background: #ffffff;
+    border-radius: 26px;
+    padding: 26px;
+    box-shadow: 0 20px 48px rgba(133, 82, 175, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.animator-page .card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 26px 60px rgba(133, 82, 175, 0.12);
+}
+
+.animator-page .center {
+    text-align: center;
+}
+
+.animator-page .tabs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 18px;
+}
+
+.animator-page .tab {
+    padding: 12px 18px;
+    background: #f4e5ff;
+    border-radius: 999px;
+    cursor: pointer;
+    color: #4c3168;
+    transition: background 0.25s ease, transform 0.25s ease;
+}
+
+.animator-page .tab:hover {
+    transform: translateY(-1px);
+    background: #ead7ff;
+}
+
+.animator-page .tab.active {
+    background: linear-gradient(135deg, #9051ff 0%, #cd84ff 100%);
+    color: #ffffff;
+    box-shadow: 0 14px 30px rgba(144, 81, 255, 0.18);
+}
+
+.animator-page .content {
+    display: none;
+    margin-top: 20px;
+    color: #5f4a75;
+    line-height: 1.8;
+    font-size: 1rem;
+}
+
+.animator-page .content.active {
+    display: block;
+}
+
+.animator-page .reveal {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.animator-page .reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+@media (max-width: 860px) {
+    .animator-page .hero {
+        padding: 48px 6%;
+    }
+
+    .animator-page .hero-right {
+        min-height: 320px;
+    }
+}
+
+@media (max-width: 600px) {
+    .animator-page .hero {
+        padding: 36px 18px;
+        border-radius: 24px;
+    }
+
+    .animator-page .hero-left h1 {
+        font-size: 2.4rem;
+    }
+
+    .animator-page .hero-left p {
+        font-size: 1rem;
+    }
+
+    .animator-page .container {
+        margin-top: 30px;
+    }
+}
+
+/* FASHION PAGE */
+.fashion-page {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(180deg, #fff5f7 0%, #fde4ef 100%);
+    color: #5d2631;
+}
+
+.fashion-page .hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    text-align: left;
+    gap: 40px;
+    padding: 80px 10%;
+    background: linear-gradient(135deg, #f9d7e5, #f7b1d2);
+    color: #5d2631;
+    max-width: 1200px;
+    margin: auto;
+    min-height: 50vh;
+    height: 500px;
+    position: relative;
+}
+
+.fashion-page .hero-left {
+    flex: 1 1 420px;
+    max-width: 520px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    gap: 20px;
+}
+
+.fashion-page .hero-left h1 {
+    font-size: clamp(2.5rem, 4vw, 4rem);
+    margin-bottom: 10px;
+    line-height: 1.05;
+    letter-spacing: -0.03em;
+}
+
+.fashion-page .hero-left p {
+    font-size: 1.1rem;
+    line-height: 1.9;
+    max-width: 520px;
+}
+
+.fashion-page .hero-right {
+    flex: 1 1 420px;
+    min-width: 300px;
+    display: flex;
+    position: absolute;
+    margin-top: -130px;
+    top: 0px;
+    right: 0px;
+}
+
+.fashion-page .hero-image {
+    width: 100%;
+    max-width: 480px;
+    border-radius: 30px;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+    width: 120%;
+    max-width: 780px;
+}
+.fashion-page .hero-right::before {
+    content: "";
+    position: absolute;
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    background: radial-gradient(circle at top left, rgba(255,255,255,0.85), rgba(255,255,255,0));
+    top: -40px;
+    right: -60px;
+    filter: blur(18px);
+    z-index: 0;
+}
+
+.fashion-page .hero-illustration {
+    width: 100%;
+    max-width: 520px;
+    border-radius: 30px;
+    box-shadow: 0 40px 80px rgba(117, 45, 74, 0.15);
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+}
+
+.fashion-page .hero-illustration svg {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.fashion-page .cta-btn {
+    margin-top: 20px;
+    padding: 16px 36px;
+    border-radius: 999px;
+    background: linear-gradient(135deg, #f7b6d1, #d64d83);
+    color: white;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 18px 36px rgba(214, 51, 108, 0.22);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+    align-self: flex-start;
+}
+
+.fashion-page .cta-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 22px 40px rgba(214, 51, 108, 0.28);
+}
+
+@media screen and (max-width: 920px) {
+    .fashion-page .hero {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 60px 8%;
+    }
+
+    .fashion-page .hero-right {
+        width: 100%;
+        min-width: auto;
+        margin-top: 30px;
+    }
+}
+
+.fashion-page .cta-btn {
+    margin-top: 20px;
+    padding: 14px 30px;
+    border-radius: 30px;
+    background: linear-gradient(45deg, #d6336c, #f8a5c2);
+    color: white;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 12px 24px rgba(214, 51, 108, 0.25);
+}
+
+.fashion-page .cta-btn:hover {
+    transform: scale(1.03);
+}
+
+.fashion-page .container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 50px 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.fashion-page .card {
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 20px;
+    padding: 30px 25px;
+    box-shadow: 0 24px 50px rgba(117, 45, 74, 0.08);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    min-height: 280px;
+    min-width: 280px;
+    text-align: center;
+}
+
+.fashion-page .card h2 {
+    margin-bottom: 10px;
+    color: #3a1221;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 15px;
+    align-items: center;
+}
+
+.fashion-page .card p {
+    margin-top: 10px;
+    color: #5d2631;
+    line-height: 1.8;
+    max-width: 260px;  
+}
+
+.fashion-page .center {
+    text-align: center;
+}
+
+.fashion-page .back-link {
+    display: inline-block;
+    padding: 12px 20px;
+    border-radius: 999px;
+    background: #ffffff;
+    border: 1px solid #d98fb0;
+    color: #8a2d48;
+    text-decoration: none;
+}
+
+.fashion-page .back-link:hover {
+    background: #f8e2eb;
+}

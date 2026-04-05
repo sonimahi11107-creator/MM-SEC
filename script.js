@@ -192,3 +192,35 @@ function loadCareersByCategory(category) {
         container.appendChild(card);
     });
 }
+
+//animator page tabs
+// TAB SWITCH
+function showTab(evt, id) {
+    let tabs = document.querySelectorAll(".tab");
+    let contents = document.querySelectorAll(".content");
+
+    tabs.forEach(t => t.classList.remove("active"));
+    contents.forEach(c => c.classList.remove("active"));
+
+    evt.currentTarget.classList.add("active");
+    document.getElementById(id).classList.add("active");
+}
+
+// BUTTON
+function startJourney() {
+    alert("Start learning Blender & After Effects 🚀");
+}
+
+// SCROLL ANIMATION
+window.addEventListener("scroll", () => {
+    let reveals = document.querySelectorAll(".reveal");
+
+    reveals.forEach(r => {
+        let top = r.getBoundingClientRect().top;
+        let trigger = window.innerHeight * 0.85;
+
+        if (top < trigger) {
+            r.classList.add("active");
+        }
+    });
+});
