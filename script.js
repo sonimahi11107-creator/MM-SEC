@@ -66,30 +66,29 @@ function loadGovernmentCareers() {
 
 const careerData = {
     government : [
-        {
-            name: "UPSC", image: "https://cdn-icons-png.flaticon.com/512/3135/3135755.png", page: "upsc.html"},
-        {name: "SSC", image: "https://cdn-icons-png.flaticon.com/512/3063/3063821.png", page: "ssc.html"},
-        {name: "State PSC", image: "https://cdn-icons-png.flaticon.com/512/190/190411.png", page: "psc.html"},
-        {name: "Railways", image: "https://cdn-icons-png.flaticon.com/512/2972/2972185.png", page: "rrb.html"},
-        {name: "Banking", image: "https://cdn-icons-png.flaticon.com/512/2331/2331970.png", page: "banking.html"}
+        {name: "UPSC", image: "https://cdn-icons-png.flaticon.com/128/8677/8677110.png", page: "upsc.html"},
+        {name: "SSC", image: "https://cdn-icons-png.flaticon.com/128/6001/6001124.png", page: "ssc.html"},
+        {name: "State PSC", image: "https://cdn-icons-png.flaticon.com/128/5141/5141099.png", page: "psc.html"},
+        {name: "Railways", image: "https://cdn-icons-png.flaticon.com/128/7029/7029671.png", page: "rrb.html"},
+        {name: "Banking", image: "https://cdn-icons-png.flaticon.com/128/2830/2830289.png", page: "banking.html"}
     ],
     technology : [
-        {name: "Software Engineer", image: "https://cdn-icons-png.flaticon.com/512/3063/3063821.png", page: "tech\\software.html"},
-        {name: "Data Scientist", image: "https://cdn-icons-png.flaticon.com/512/190/190411.png", page: "tech\\dataSci.html"}, 
-        {name: "Cybersecurity Analyst", image: "https://cdn-icons-png.flaticon.com/512/2972/2972185.png", page: "tech\\cyberSecurity.html"},
-        {name: "AI Researcher", image: "https://cdn-icons-png.flaticon.com/512/2331/2331970.png", page: "tech\\aiResearcher.html"},
-        {name: "Cloud Engineer", image: "https://cdn-icons-png.flaticon.com/512/3135/3135755.png", page: "tech\\cloudEngineer.html"}
+        {name: "Software Engineer", image: "https://cdn-icons-png.flaticon.com/128/8874/8874539.png", page: "tech\\software.html"},
+        {name: "Data Scientist", image: "https://cdn-icons-png.flaticon.com/128/2316/2316128.png", page: "tech\\dataSci.html"}, 
+        {name: "Cybersecurity Analyst", image: "https://cdn-icons-png.flaticon.com/128/2084/2084028.png", page: "tech\\cyberSecurity.html"},
+        {name: "AI Researcher", image: "https://cdn-icons-png.flaticon.com/128/11103/11103366.png", page: "tech\\aiResearcher.html"},
+        {name: "Cloud Engineer", image: "https://cdn-icons-png.flaticon.com/128/6584/6584875.png", page: "tech\\cloudEngineer.html"}
     ],
     medical : [
-        {name: "Doctor", image: "https://cdn-icons-png.flaticon.com/512/3063/3063821.png", page: "medical\\doctor.html"},    
-        {name: "Nurse", image: "https://cdn-icons-png.flaticon.com/512/190/190411.png", page: "medical\\nurse.html"},
-        {name: "Pharmacist", image: "https://cdn-icons-png.flaticon.com/512/2972/2972185.png", page: "medical\\pharmacist.html"},
-        {name: "Medical Researcher", image: "https://cdn-icons-png.flaticon.com/512/2331/2331970.png", page: "medical\\researcher.html"},
-        {name: "Public Health Official", image: "https://cdn-icons-png.flaticon.com/512/3135/3135755.png", page: "medical\\publichealth.html"}
+        {name: "Doctor", image: "https://cdn-icons-png.flaticon.com/128/2785/2785482.png", page: "medical\\doctor.html"},    
+        {name: "Nurse", image: "https://cdn-icons-png.flaticon.com/128/3209/3209070.png", page: "medical\\nurse.html"},
+        {name: "Pharmacist", image: "https://cdn-icons-png.flaticon.com/128/6260/6260388.png", page: "medical\\pharmacist.html"},
+        {name: "Medical Researcher", image: "https://cdn-icons-png.flaticon.com/128/6401/6401547.png", page: "medical\\researcher.html"},
+        {name: "Public Health Official", image: "https://cdn-icons-png.flaticon.com/128/6310/6310274.png", page: "medical\\publichealth.html"}
     ],
 
     teaching : [
-        {name: "School Teacher", image: "https://cdn-icons-png.flaticon.com/512/3063/3063821.png", page: "teaching\\schlTeacher.html"},    
+        {name: "School Teacher", image: "https://cdn-icons-png.flaticon.com/128/5369/5369664.png", page: "teaching\\schlTeacher.html"},    
         {name: "College Professor", image: "https://cdn-icons-png.flaticon.com/512/190/190411.png", page: "teaching\\clgProf.html"},    
         {name: "Online Tutor", image: "https://cdn-icons-png.flaticon.com/512/2972/2972185.png", page: "teaching\\onlineTutor.html"},
         {name: "Educational Consultant", image: "https://cdn-icons-png.flaticon.com/512/2331/2331970.png", page: "teaching\\eduConsultant.html"},
