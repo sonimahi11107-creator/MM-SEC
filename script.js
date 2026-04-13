@@ -66,11 +66,11 @@ function loadGovernmentCareers() {
 
 const careerData = {
     government : [
-        {name: "UPSC", image: "https://cdn-icons-png.flaticon.com/128/8677/8677110.png", page: "upsc.html"},
-        {name: "SSC", image: "https://cdn-icons-png.flaticon.com/128/6001/6001124.png", page: "ssc.html"},
-        {name: "State PSC", image: "https://cdn-icons-png.flaticon.com/128/5141/5141099.png", page: "psc.html"},
-        {name: "Railways", image: "https://cdn-icons-png.flaticon.com/128/7029/7029671.png", page: "rrb.html"},
-        {name: "Banking", image: "https://cdn-icons-png.flaticon.com/128/2830/2830289.png", page: "banking.html"}
+        {name: "UPSC", image: "https://cdn-icons-png.flaticon.com/128/8677/8677110.png", page: "govern/upsc.html"},
+        {name: "SSC", image: "https://cdn-icons-png.flaticon.com/128/6001/6001124.png", page: "govern/ssc.html"},
+        {name: "State PSC", image: "https://cdn-icons-png.flaticon.com/128/5141/5141099.png", page: "govern/statePsc.html"},
+        {name: "Railways", image: "https://cdn-icons-png.flaticon.com/128/7029/7029671.png", page: "govern/railway.html"},
+        {name: "Banking", image: "https://cdn-icons-png.flaticon.com/128/2830/2830289.png", page: "govern/banking.html"}
     ],
     technology : [
         {name: "Software Engineer", image: "https://cdn-icons-png.flaticon.com/128/8874/8874539.png", page: "tech/software.html"},

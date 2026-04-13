@@ -614,6 +614,19 @@ body {
 .sales-page .biz-hero-left a:hover { transform: translateY(-2px); box-shadow: 0 8px 24px rgba(0,0,0,0.15); }
 .sales-page .biz-hero-right { font-size: 10rem; line-height: 1; flex-shrink: 0; filter: drop-shadow(0 20px 40px rgba(0,0,0,0.15)); }
 
+/* ===== DEFENCE / Air Force Officer ===== */
+.airforce-page { font-family: 'DM Sans', sans-serif; background: #eef6f7; color: #111827; }
+.airforce-page .biz-hero { display: flex; align-items: center; justify-content: space-between; gap: 40px; padding: 70px 80px; background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%); min-height: 320px; }
+.airforce-page .biz-hero-left { flex: 1; max-width: 520px; }
+.airforce-page .biz-hero-left .eyebrow { display: inline-block; font-size: 0.75rem; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: rgba(255,255,255,0.7); margin-bottom: 16px; }
+.airforce-page .biz-hero-left h1 { font-family: 'Fraunces', serif; font-size: clamp(2.2rem, 4vw, 3.4rem); font-weight: 900; line-height: 1; letter-spacing: -0.03em; color: #fff; margin-bottom: 18px; }
+.airforce-page .biz-hero-left p { font-size: 1rem; color: rgba(255,255,255,0.75); line-height: 1.7; max-width: 420px; margin-bottom: 28px; }
+.airforce-page .biz-hero-left a { display: inline-block; padding: 13px 30px; background: #fff; color: #0f1923; font-weight: 600; font-size: 0.9rem; border-radius: 999px; text-decoration: none; transition: transform 0.2s, box-shadow 0.2s; }
+.airforce-page .biz-hero-left a:hover { transform: translateY(-2px); box-shadow: 0 8px 24px rgba(0,0,0,0.15); }
+.airforce-page .biz-hero-right { font-size: 10rem; line-height: 1; flex-shrink: 0; filter: drop-shadow(0 20px 40px rgba(0,0,0,0.15)); }
+.airforce-page .back-link { color: #0f3460; }
+.airforce-page .back-link:hover { color: #16213e; }
+
 /* ===== BUSINESS / HR Manager ===== */
 .hr-page { font-family: 'DM Sans', sans-serif; background: #f7f4fb; color: #111827; }
 .hr-page .biz-hero { display: flex; align-items: center; justify-content: space-between; gap: 40px; padding: 70px 80px; background: linear-gradient(135deg, #5b2d8e 0%, #9b59b6 100%); min-height: 320px; }
@@ -637,6 +650,12 @@ body {
   .sales-page .biz-hero { flex-direction: column; padding: 48px 24px; text-align: center; }
   .sales-page .biz-hero-left p { margin: 0 auto 24px; }
   .sales-page .biz-hero-right { font-size: 6rem; }
+}
+
+@media (max-width: 768px) {
+  .airforce-page .biz-hero { flex-direction: column; padding: 48px 24px; text-align: center; }
+  .airforce-page .biz-hero-left p { margin: 0 auto 24px; }
+  .airforce-page .biz-hero-right { font-size: 6rem; }
 }
 
 @media (max-width: 768px) {
@@ -2118,4 +2137,317 @@ footer strong {
 
 .career-content .back-link:hover {
   text-decoration: underline;
+}
+
+/* ===========================
+   🏛️ GOVERNMENT PAGE
+=========================== */
+.govt-page {
+  font-family: 'DM Sans', sans-serif;
+  background: #f5f5f0;
+  color: #1a1a2e;
+}
+
+.govt-page .hero {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  padding: 80px 8%;
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 55%, #0f3460 100%);
+  position: relative;
+  overflow: hidden;
+  min-height: 460px;
+}
+
+.govt-page .hero::before {
+  content: '';
+  position: absolute;
+  width: 500px; height: 500px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(255,165,0,0.12) 0%, transparent 70%);
+  top: -100px; right: -80px;
+}
+
+.govt-page .hero-left {
+  flex: 1;
+  max-width: 560px;
+  position: relative;
+}
+
+.govt-page .hero-badge {
+  display: inline-block;
+  background: rgba(255,255,255,0.1);
+  border: 1px solid rgba(255,255,255,0.2);
+  color: #ffa500;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 6px 14px;
+  border-radius: 999px;
+  margin-bottom: 20px;
+}
+
+.govt-page .hero-left h1 {
+  font-family: 'Fraunces', serif;
+  font-size: clamp(2.2rem, 4vw, 3.6rem);
+  font-weight: 900;
+  line-height: 1.05;
+  letter-spacing: -0.03em;
+  color: #fff;
+  margin-bottom: 18px;
+}
+
+.govt-page .hero-left h1 em {
+  font-style: italic;
+  font-weight: 300;
+  color: #ffa500;
+}
+
+.govt-page .hero-left p {
+  font-size: 1rem;
+  line-height: 1.75;
+  color: rgba(255,255,255,0.65);
+  margin-bottom: 32px;
+}
+
+.govt-page .cta-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 14px 30px;
+  background: #ffa500;
+  color: #1a1a2e;
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 700;
+  font-size: 0.95rem;
+  border: none;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: all 0.3s;
+  box-shadow: 0 8px 24px rgba(255,165,0,0.3);
+}
+
+.govt-page .cta-btn:hover {
+  background: #fff;
+  transform: translateY(-2px);
+}
+
+.govt-page .hero-right {
+  flex: 0 0 360px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 9rem;
+  filter: drop-shadow(0 20px 40px rgba(0,0,0,0.3));
+}
+
+.govt-page .container {
+  max-width: 1000px;
+  margin: 60px auto;
+  padding: 0 24px 80px;
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.govt-page .card {
+  background: #fff;
+  border-radius: 20px;
+  padding: 36px 32px;
+  box-shadow: 0 4px 24px rgba(15,52,96,0.07);
+  border: 1px solid rgba(15,52,96,0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.govt-page .card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 40px rgba(15,52,96,0.13);
+}
+
+.govt-page .card h2 {
+  font-family: 'Fraunces', serif;
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #0f3460;
+  margin-bottom: 16px;
+}
+
+.govt-page .card h3 {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #1a1a2e;
+  margin: 20px 0 10px;
+}
+
+.govt-page .card p {
+  color: #6b7280;
+  line-height: 1.8;
+  font-size: 0.95rem;
+}
+
+.govt-page .card ul {
+  list-style: none;
+  margin-top: 10px;
+}
+
+.govt-page .card ul li {
+  padding: 8px 0;
+  border-bottom: 1px solid #f5f5f0;
+  color: #6b7280;
+  font-size: 0.93rem;
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  line-height: 1.6;
+}
+
+.govt-page .card ul li::before {
+  content: '✦';
+  color: #0f3460;
+  font-size: 0.6rem;
+  flex-shrink: 0;
+  margin-top: 5px;
+}
+
+.govt-page .card ol {
+  padding-left: 20px;
+  margin-top: 10px;
+  color: #6b7280;
+}
+
+.govt-page .card ol li {
+  margin: 8px 0;
+  font-size: 0.93rem;
+  line-height: 1.6;
+}
+
+.govt-page .card a {
+  color: #0f3460;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.govt-page .card a:hover { text-decoration: underline; }
+.govt-page .card strong { color: #1a1a2e; }
+
+/* EXAM STAGES */
+.stages-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 14px;
+  margin-top: 14px;
+}
+
+.stage-card {
+  background: #f0f4ff;
+  border-radius: 14px;
+  padding: 20px 16px;
+  text-align: center;
+  border: 1px solid rgba(15,52,96,0.1);
+}
+
+.stage-card .stage-num {
+  font-family: 'Fraunces', serif;
+  font-size: 1.8rem;
+  font-weight: 900;
+  color: #0f3460;
+  display: block;
+}
+
+.stage-card .stage-name {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #374151;
+  margin-top: 4px;
+  display: block;
+}
+
+.stage-card .stage-desc {
+  font-size: 0.78rem;
+  color: #9ca3af;
+  margin-top: 4px;
+}
+
+/* SALARY GRID */
+.govt-salary-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 14px;
+  margin-top: 12px;
+}
+
+.govt-salary-item {
+  background: #f5f5f0;
+  border-radius: 12px;
+  padding: 18px 14px;
+  text-align: center;
+  border: 1px solid rgba(15,52,96,0.08);
+}
+
+.govt-salary-item .post {
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: #0f3460;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 6px;
+  display: block;
+}
+
+.govt-salary-item .pay {
+  font-family: 'Fraunces', serif;
+  font-size: 1.3rem;
+  font-weight: 900;
+  color: #1a1a2e;
+  display: block;
+}
+
+.govt-salary-item .perks {
+  font-size: 0.75rem;
+  color: #9ca3af;
+  margin-top: 4px;
+}
+
+/* PROS CONS */
+.govt-pros-cons {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  margin-top: 12px;
+}
+
+.govt-pros, .govt-cons {
+  border-radius: 12px;
+  padding: 20px;
+}
+
+.govt-pros { background: #f0fdf4; }
+.govt-cons { background: #fef9f0; }
+.govt-pros h4 { color: #166534; font-size: 0.9rem; margin-bottom: 10px; }
+.govt-cons h4 { color: #92400e; font-size: 0.9rem; margin-bottom: 10px; }
+.govt-pros li, .govt-cons li { border-bottom: none !important; font-size: 0.88rem !important; }
+.govt-pros li::before { content: '✅' !important; font-size: 0.75rem !important; }
+.govt-cons li::before { content: '⚠️' !important; font-size: 0.75rem !important; }
+
+/* BACK LINK */
+.govt-back-wrap { text-align: center; margin-top: 8px; }
+.govt-page .back-link {
+  color: #0f3460;
+  font-weight: 500;
+  font-size: 0.9rem;
+  text-decoration: none;
+}
+.govt-page .back-link:hover { text-decoration: underline; }
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .govt-page .hero { padding: 60px 6%; flex-direction: column; flex-wrap: wrap; }
+  .govt-page .hero-right { flex: unset; font-size: 6rem; }
+  .govt-page .container { padding: 0 16px 60px; gap: 20px; }
+  .govt-page .card { padding: 28px 22px; }
+  .govt-pros-cons { grid-template-columns: 1fr; }
+  .stages-grid { grid-template-columns: repeat(2, 1fr); }
 }

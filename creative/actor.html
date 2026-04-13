@@ -1,11 +1,162 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Actor Page</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Actor Career — MakeMyCareer</title>
+  <link rel="stylesheet" href="../style.css">
+  <style>
+    .biz-hero {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 40px;
+      padding: 70px 80px;
+      background: linear-gradient(135deg, #7b0000 0%, #c0392b 100%);
+      min-height: 320px;
+    }
+    .biz-hero-left { flex: 1; max-width: 520px; }
+    .biz-hero-left .eyebrow {
+      display: inline-block;
+      font-size: 0.75rem;
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.7);
+      margin-bottom: 16px;
+    }
+    .biz-hero-left h1 {
+      font-family: 'Fraunces', serif;
+      font-size: clamp(2.2rem, 4vw, 3.4rem);
+      font-weight: 900;
+      line-height: 1;
+      letter-spacing: -0.03em;
+      color: #fff;
+      margin-bottom: 18px;
+    }
+    .biz-hero-left p {
+      font-size: 1rem;
+      color: rgba(255,255,255,0.75);
+      line-height: 1.7;
+      max-width: 420px;
+      margin-bottom: 28px;
+    }
+    .biz-hero-left a {
+      display: inline-block;
+      padding: 13px 30px;
+      background: #fff;
+      color: #0f1923;
+      font-weight: 600;
+      font-size: 0.9rem;
+      border-radius: 999px;
+      text-decoration: none;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .biz-hero-left a:hover { transform: translateY(-2px); box-shadow: 0 8px 24px rgba(0,0,0,0.15); }
+    .biz-hero-right {
+      font-size: 10rem;
+      line-height: 1;
+      flex-shrink: 0;
+      filter: drop-shadow(0 20px 40px rgba(0,0,0,0.15));
+    }
+    @media (max-width: 768px) {
+      .biz-hero { flex-direction: column; padding: 48px 24px; text-align: center; }
+      .biz-hero-left p { margin: 0 auto 24px; }
+      .biz-hero-right { font-size: 6rem; }
+    }
+  </style>
 </head>
-<body>
+<body class="career-content">
+
+  <header class="biz-hero">
+    <div class="biz-hero-left">
+      <span class="eyebrow">Creative Career</span>
+      <h1>Actor</h1>
+      <p>Step into a thousand lives. Tell stories that make the world laugh, cry, and think.</p>
+      <a href="../creative.html">← Back to Creative Arts</a>
+    </div>
+    <div class="biz-hero-right">🎭</div>
+  </header>
+
+  <div class="container">
+    <div class="card">
+      <h2>🔍 What is an Actor?</h2>
+      <p>An actor portrays characters in films, television, theatre, web series, and advertisements. Acting is about emotional truth — convincingly living as a character to tell a compelling story. It requires dedication, training, and the courage to be vulnerable in front of an audience.</p>
+    </div>
+
+    <div class="card">
+      <h2>🧠 Is This Career Right for You?</h2>
+      <ul>
+        <li>You are emotionally expressive and empathetic</li>
+        <li>You enjoy performing and being on stage or screen</li>
+        <li>You can memorize scripts and take direction well</li>
+        <li>You are disciplined with physical and vocal training</li>
+        <li>You handle rejection without losing confidence</li>
+        <li>You are patient — acting careers take time to build</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>🎓 Skills & Education</h2>
+      <h3>Key Skills</h3>
+      <ul>
+        <li>Method acting and character development</li>
+        <li>Voice modulation and diction</li>
+        <li>Physical movement and body language</li>
+        <li>Script reading and improvisation</li>
+        <li>Emotional range and control</li>
+        <li>Collaboration with directors and co-actors</li>
+      </ul>
+      <h3>Education</h3>
+      <ul>
+        <li>National School of Drama (NSD), New Delhi</li>
+        <li>Film and Television Institute of India (FTII)</li>
+        <li>BA in Performing Arts / Theatre</li>
+        <li>Acting workshops and theatre groups</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>💼 Career Roles</h2>
+      <ul>
+        <li>Film Actor (Bollywood, Regional, Hollywood)</li>
+        <li>Television / Web Series Actor</li>
+        <li>Theatre / Stage Actor</li>
+        <li>Voice Actor (Animation, Dubbing)</li>
+        <li>Commercial / Advertisement Actor</li>
+        <li>Acting Coach / Drama Teacher</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>💰 Income Potential</h2>
+      <ul>
+        <li><strong>Beginner / Theatre:</strong> ₹1 – ₹4 LPA</li>
+        <li><strong>TV / Web Series:</strong> ₹5 – ₹25 LPA</li>
+        <li><strong>Established Film Actor:</strong> ₹50 LPA – ₹5 Cr</li>
+        <li><strong>Top Stars:</strong> ₹10 Cr+ per film</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>⚖️ Pros & Cons</h2>
+      <h3>👍 Pros</h3>
+      <ul>
+        <li>Fame, recognition, and creative fulfillment</li>
+        <li>Opportunity to travel and work globally</li>
+        <li>Diverse work — every role is a new experience</li>
+        <li>High earning once established</li>
+      </ul>
+      <h3>👎 Cons</h3>
+      <ul>
+        <li>Extremely unpredictable career path</li>
+        <li>Constant auditions and frequent rejection</li>
+        <li>No job security or fixed income</li>
+        <li>Public scrutiny affects personal life</li>
+      </ul>
+    </div>
+    <a href="../creative.html" class="back-link">← Back to Creative Arts</a>
+  </div>
 
 </body>
 </html>
