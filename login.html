@@ -1,38 +1,49 @@
 <!DOCTYPE html>
-<html>
-    <head>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login — MakeMyCareer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-        <title> Login | MakeMyCareer</title>
+  <div class="form-page-wrapper">
+    <div class="form-container">
 
-    <!-- Responsive -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <div class="form-brand">Make<span>My</span>Career</div>
+      <h2>Welcome back</h2>
+      <p class="form-subtitle">Sign in to continue your career journey</p>
 
-        <link rel = "stylesheet" href="style.css">
+      <form id="loginForm">
+        <div class="form-group">
+          <label for="email">Email Address</label>
+          <input type="email" id="email" name="email" placeholder="you@example.com" required>
+        </div>
 
-    </head>
- 
-    <body>
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input type="password" id="password" name="password" placeholder="Enter your password" required>
+        </div>
 
-       
-<!--Login form container-->
-        <form id="loginForm"> 
+        <button type="submit" class="btn">Sign In →</button>
+      </form>
 
-            <!-- 🔹 Login Container -->
-            <div class="form-container">
- <h2> Login to your Profile</h2>
-            <label> Email:</label>
-            <input type="email" name="email" placeholder="Enter your registerd Email ID">
-            
-            <label>Password:</label>
-            <input type="password" name="password" placeholder="Enter you password">
-           
-            <button type="submit" class="btn"> Login </button>
+      <div class="form-divider">or</div>
 
-        </form>
+      <p class="form-footer-text">
+        Don't have an account? <a href="register.html">Create one free</a>
+      </p>
 
-        <a href="index.html" class="back-link">Back to Home</a>
+      <a href="index.html" class="back-link">← Back to Home</a>
     </div>
-        
-    <script src="script.js"></script>
-    </body>
+  </div>
+<!-- Firebase SDK -->
+<script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-auth-compat.js"></script>
+
+<!-- Your JS -->
+<script src="script.js"></script>
+</body>
 </html>
