@@ -2753,3 +2753,591 @@ footer strong {
   .edu-pros-cons { grid-template-columns: 1fr; }
   .edu-stages-grid { grid-template-columns: repeat(2, 1fr); }
 }
+
+/* ===========================
+   💻 TECHNOLOGY PAGE
+=========================== */
+.tech-page {
+  font-family: 'DM Sans', sans-serif;
+  background: #0d1117;
+  color: #e6edf3;
+}
+
+.tech-page .hero {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  padding: 80px 8%;
+  background: linear-gradient(135deg, #0d1117 0%, #161b22 55%, #1f2937 100%);
+  position: relative;
+  overflow: hidden;
+  min-height: 460px;
+  border-bottom: 1px solid #30363d;
+}
+
+.tech-page .hero::before {
+  content: '';
+  position: absolute;
+  width: 500px; height: 500px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(88,166,255,0.08) 0%, transparent 70%);
+  top: -100px; right: -80px;
+}
+
+.tech-page .hero-left {
+  flex: 1;
+  max-width: 560px;
+  position: relative;
+}
+
+.tech-page .hero-badge {
+  display: inline-block;
+  background: rgba(88,166,255,0.1);
+  border: 1px solid rgba(88,166,255,0.25);
+  color: #58a6ff;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 6px 14px;
+  border-radius: 999px;
+  margin-bottom: 20px;
+}
+
+.tech-page .hero-left h1 {
+  font-family: 'Fraunces', serif;
+  font-size: clamp(2.2rem, 4vw, 3.6rem);
+  font-weight: 900;
+  line-height: 1.05;
+  letter-spacing: -0.03em;
+  color: #e6edf3;
+  margin-bottom: 18px;
+}
+
+.tech-page .hero-left h1 em {
+  font-style: italic;
+  font-weight: 300;
+  color: #58a6ff;
+}
+
+.tech-page .hero-left p {
+  font-size: 1rem;
+  line-height: 1.75;
+  color: rgba(230,237,243,0.6);
+  margin-bottom: 32px;
+}
+
+.tech-page .cta-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 14px 30px;
+  background: #58a6ff;
+  color: #0d1117;
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 700;
+  font-size: 0.95rem;
+  border: none;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: all 0.3s;
+  box-shadow: 0 8px 24px rgba(88,166,255,0.25);
+}
+
+.tech-page .cta-btn:hover {
+  background: #e6edf3;
+  transform: translateY(-2px);
+}
+
+.tech-page .hero-right {
+  flex: 0 0 360px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 9rem;
+  filter: drop-shadow(0 20px 40px rgba(88,166,255,0.2));
+}
+
+.tech-page .container {
+  max-width: 1000px;
+  margin: 60px auto;
+  padding: 0 24px 80px;
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.tech-page .card {
+  background: #161b22;
+  border-radius: 20px;
+  padding: 36px 32px;
+  border: 1px solid #30363d;
+  transition: transform 0.3s, border-color 0.3s;
+}
+
+.tech-page .card:hover {
+  transform: translateY(-4px);
+  border-color: #58a6ff;
+}
+
+.tech-page .card h2 {
+  font-family: 'Fraunces', serif;
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #e6edf3;
+  margin-bottom: 16px;
+}
+
+.tech-page .card h3 {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #c9d1d9;
+  margin: 20px 0 10px;
+}
+
+.tech-page .card p {
+  color: #8b949e;
+  line-height: 1.8;
+  font-size: 0.95rem;
+}
+
+.tech-page .card ul {
+  list-style: none;
+  margin-top: 10px;
+}
+
+.tech-page .card ul li {
+  padding: 8px 0;
+  border-bottom: 1px solid #21262d;
+  color: #8b949e;
+  font-size: 0.93rem;
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  line-height: 1.6;
+}
+
+.tech-page .card ul li::before {
+  content: '▸';
+  color: #58a6ff;
+  font-size: 0.75rem;
+  flex-shrink: 0;
+  margin-top: 3px;
+}
+
+.tech-page .card a {
+  color: #58a6ff;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.tech-page .card a:hover { text-decoration: underline; }
+.tech-page .card strong { color: #e6edf3; }
+
+/* STAGES GRID */
+.tech-stages-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 14px;
+  margin-top: 14px;
+}
+
+.tech-stage-card {
+  background: #0d1117;
+  border-radius: 14px;
+  padding: 20px 16px;
+  text-align: center;
+  border: 1px solid #30363d;
+}
+
+.tech-stage-card .stage-num {
+  font-family: 'Fraunces', serif;
+  font-size: 1.4rem;
+  font-weight: 900;
+  color: #58a6ff;
+  display: block;
+}
+
+.tech-stage-card .stage-name {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #c9d1d9;
+  margin-top: 4px;
+  display: block;
+}
+
+.tech-stage-card .stage-desc {
+  font-size: 0.78rem;
+  color: #6e7681;
+  margin-top: 4px;
+}
+
+/* SALARY GRID */
+.tech-salary-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 14px;
+  margin-top: 12px;
+}
+
+.tech-salary-item {
+  background: #0d1117;
+  border-radius: 12px;
+  padding: 18px 14px;
+  text-align: center;
+  border: 1px solid #30363d;
+}
+
+.tech-salary-item .post {
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: #58a6ff;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 6px;
+  display: block;
+}
+
+.tech-salary-item .pay {
+  font-family: 'Fraunces', serif;
+  font-size: 1.3rem;
+  font-weight: 900;
+  color: #e6edf3;
+  display: block;
+}
+
+.tech-salary-item .perks {
+  font-size: 0.75rem;
+  color: #6e7681;
+  margin-top: 4px;
+}
+
+/* PROS CONS */
+.tech-pros-cons {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  margin-top: 12px;
+}
+
+.tech-pros, .tech-cons {
+  border-radius: 12px;
+  padding: 20px;
+}
+
+.tech-pros { background: #0f2a1a; border: 1px solid #1a4731; }
+.tech-cons { background: #2a1a0f; border: 1px solid #4a2e1a; }
+.tech-pros h4 { color: #3fb950; font-size: 0.9rem; margin-bottom: 10px; }
+.tech-cons h4 { color: #d29922; font-size: 0.9rem; margin-bottom: 10px; }
+.tech-pros li, .tech-cons li { border-bottom: none !important; font-size: 0.88rem !important; }
+.tech-pros li::before { content: '✅' !important; font-size: 0.75rem !important; }
+.tech-cons li::before { content: '⚠️' !important; font-size: 0.75rem !important; }
+
+/* BACK LINK */
+.tech-back-wrap { text-align: center; margin-top: 8px; }
+.tech-page .back-link {
+  color: #58a6ff;
+  font-weight: 500;
+  font-size: 0.9rem;
+  text-decoration: none;
+}
+.tech-page .back-link:hover { text-decoration: underline; }
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .tech-page .hero { padding: 60px 6%; flex-direction: column; flex-wrap: wrap; }
+  .tech-page .hero-right { flex: unset; font-size: 6rem; }
+  .tech-page .container { padding: 0 16px 60px; gap: 20px; }
+  .tech-page .card { padding: 28px 22px; }
+  .tech-pros-cons { grid-template-columns: 1fr; }
+  .tech-stages-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+/* ===========================
+   ✈️ AVIATION & LOGISTICS PAGE
+=========================== */
+.aviation-page {
+  font-family: 'DM Sans', sans-serif;
+  background: #f0f4fa;
+  color: #1a2035;
+}
+
+.aviation-page .hero {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  padding: 80px 8%;
+  background: linear-gradient(135deg, #0a1628 0%, #0d2347 55%, #103a6e 100%);
+  position: relative;
+  overflow: hidden;
+  min-height: 460px;
+}
+
+.aviation-page .hero::before {
+  content: '';
+  position: absolute;
+  width: 600px; height: 600px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(125,185,255,0.08) 0%, transparent 70%);
+  top: -150px; right: -100px;
+}
+
+.aviation-page .hero-left {
+  flex: 1;
+  max-width: 560px;
+  position: relative;
+}
+
+.aviation-page .hero-badge {
+  display: inline-block;
+  background: rgba(255,255,255,0.08);
+  border: 1px solid rgba(255,255,255,0.18);
+  color: #93c5fd;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 6px 14px;
+  border-radius: 999px;
+  margin-bottom: 20px;
+}
+
+.aviation-page .hero-left h1 {
+  font-family: 'Fraunces', serif;
+  font-size: clamp(2.2rem, 4vw, 3.6rem);
+  font-weight: 900;
+  line-height: 1.05;
+  letter-spacing: -0.03em;
+  color: #fff;
+  margin-bottom: 18px;
+}
+
+.aviation-page .hero-left h1 em {
+  font-style: italic;
+  font-weight: 300;
+  color: #93c5fd;
+}
+
+.aviation-page .hero-left p {
+  font-size: 1rem;
+  line-height: 1.75;
+  color: rgba(255,255,255,0.6);
+  margin-bottom: 32px;
+}
+
+.aviation-page .cta-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 14px 30px;
+  background: #93c5fd;
+  color: #0a1628;
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 700;
+  font-size: 0.95rem;
+  border: none;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: all 0.3s;
+  box-shadow: 0 8px 24px rgba(147,197,253,0.25);
+}
+
+.aviation-page .cta-btn:hover {
+  background: #fff;
+  transform: translateY(-2px);
+}
+
+.aviation-page .hero-right {
+  flex: 0 0 360px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 9rem;
+  filter: drop-shadow(0 20px 40px rgba(0,0,0,0.4));
+}
+
+.aviation-page .container {
+  max-width: 1000px;
+  margin: 60px auto;
+  padding: 0 24px 80px;
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.aviation-page .card {
+  background: #fff;
+  border-radius: 20px;
+  padding: 36px 32px;
+  box-shadow: 0 4px 24px rgba(10,22,40,0.07);
+  border: 1px solid rgba(10,22,40,0.08);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.aviation-page .card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 40px rgba(10,22,40,0.13);
+}
+
+.aviation-page .card h2 {
+  font-family: 'Fraunces', serif;
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #0d2347;
+  margin-bottom: 16px;
+}
+
+.aviation-page .card h3 {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #1a2035;
+  margin: 20px 0 10px;
+}
+
+.aviation-page .card p {
+  color: #6b7280;
+  line-height: 1.8;
+  font-size: 0.95rem;
+}
+
+.aviation-page .card ul {
+  list-style: none;
+  margin-top: 10px;
+}
+
+.aviation-page .card ul li {
+  padding: 8px 0;
+  border-bottom: 1px solid #f0f4fa;
+  color: #6b7280;
+  font-size: 0.93rem;
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  line-height: 1.6;
+}
+
+.aviation-page .card ul li::before {
+  content: '✦';
+  color: #0d2347;
+  font-size: 0.6rem;
+  flex-shrink: 0;
+  margin-top: 5px;
+}
+
+.aviation-page .card a { color: #0d2347; font-weight: 500; text-decoration: none; }
+.aviation-page .card a:hover { text-decoration: underline; }
+.aviation-page .card strong { color: #1a2035; }
+
+/* STAGES GRID */
+.avi-stages-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 14px;
+  margin-top: 14px;
+}
+
+.avi-stage-card {
+  background: #f0f4fa;
+  border-radius: 14px;
+  padding: 20px 16px;
+  text-align: center;
+  border: 1px solid rgba(10,22,40,0.08);
+}
+
+.avi-stage-card .stage-num {
+  font-family: 'Fraunces', serif;
+  font-size: 1.4rem;
+  font-weight: 900;
+  color: #0d2347;
+  display: block;
+}
+
+.avi-stage-card .stage-name {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #374151;
+  margin-top: 4px;
+  display: block;
+}
+
+.avi-stage-card .stage-desc {
+  font-size: 0.78rem;
+  color: #9ca3af;
+  margin-top: 4px;
+}
+
+/* SALARY GRID */
+.avi-salary-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 14px;
+  margin-top: 12px;
+}
+
+.avi-salary-item {
+  background: #f0f4fa;
+  border-radius: 12px;
+  padding: 18px 14px;
+  text-align: center;
+  border: 1px solid rgba(10,22,40,0.07);
+}
+
+.avi-salary-item .post {
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: #0d2347;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 6px;
+  display: block;
+}
+
+.avi-salary-item .pay {
+  font-family: 'Fraunces', serif;
+  font-size: 1.3rem;
+  font-weight: 900;
+  color: #1a2035;
+  display: block;
+}
+
+.avi-salary-item .perks {
+  font-size: 0.75rem;
+  color: #9ca3af;
+  margin-top: 4px;
+}
+
+/* PROS CONS */
+.avi-pros-cons {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  margin-top: 12px;
+}
+
+.avi-pros, .avi-cons { border-radius: 12px; padding: 20px; }
+.avi-pros { background: #f0fdf4; }
+.avi-cons { background: #fef9f0; }
+.avi-pros h4 { color: #166534; font-size: 0.9rem; margin-bottom: 10px; }
+.avi-cons h4 { color: #92400e; font-size: 0.9rem; margin-bottom: 10px; }
+.avi-pros li, .avi-cons li { border-bottom: none !important; font-size: 0.88rem !important; }
+.avi-pros li::before { content: '✅' !important; font-size: 0.75rem !important; }
+.avi-cons li::before { content: '⚠️' !important; font-size: 0.75rem !important; }
+
+/* BACK LINK */
+.avi-back-wrap { text-align: center; margin-top: 8px; }
+.aviation-page .back-link { color: #0d2347; font-weight: 500; font-size: 0.9rem; text-decoration: none; }
+.aviation-page .back-link:hover { text-decoration: underline; }
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .aviation-page .hero { padding: 60px 6%; flex-direction: column; flex-wrap: wrap; }
+  .aviation-page .hero-right { flex: unset; font-size: 6rem; }
+  .aviation-page .container { padding: 0 16px 60px; gap: 20px; }
+  .aviation-page .card { padding: 28px 22px; }
+  .avi-pros-cons { grid-template-columns: 1fr; }
+  .avi-stages-grid { grid-template-columns: repeat(2, 1fr); }
+}
