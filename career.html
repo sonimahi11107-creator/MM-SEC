@@ -1,35 +1,59 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Career Selection | MakeMyCareer</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="style.css">
-    </head>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Career Selection | MakeMyCareer</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="career.css">
+</head>
+<body>
 
-    <body>
-        <div class="form-container">
-            <h2 class="heading">Select your Career Interest</h2>
-             <!-- Dropdown -->
-    <select id="interest">
-        <option value="">--Select Interest--</option>
-        <option value="technology">Technology</option>
-        <option value="medical">Medical</option>
-        <option value="government">Government Jobs</option>
-        <option value="business">Business</option>
-        <option value="arts">Arts & Design</option>
-        <option value="defence">Defence Sector</option>
-        <option value="publicSafety">Public Safety</option>
-        <option value="law">Law & Legal</option>
-        <option value="transportation">Transportation</option>
-        <option value="creative">Creative Arts</option>
-    </select>
+  <div class="career-page">
 
-    <button class="btn" onclick="showCareer()">Show Career Options</button>
-    
-    <div id="result" class="card-container"></div>
+    <div class="career-page-header">
+      <h1>What's your career interest?</h1>
+      <p>Select a domain below to explore career paths</p>
+    </div>
+
+    <div class="category-grid" id="categoryGrid"></div>
 
     <a href="index.html" class="back-link">← Back to Home</a>
-        </div>
-        <script src="script.js"></script>
-    </body>
+
+  </div>
+
+  <script src="script.js"></script>
+  <script>
+    const categories = [
+      { id: "technology",    icon: "💻", name: "Technology" },
+      { id: "medical",       icon: "🏥", name: "Medical" },
+      { id: "government",    icon: "🏛️", name: "Government" },
+      { id: "business",      icon: "💼", name: "Business" },
+      { id: "arts",          icon: "🎨", name: "Arts & Design" },
+      { id: "defence",       icon: "🛡️", name: "Defence" },
+      { id: "publicSafety",  icon: "🚨", name: "Public Safety" },
+      { id: "law",           icon: "⚖️", name: "Law & Legal" },
+      { id: "transportation",icon: "✈️", name: "Transportation" },
+      { id: "creative",      icon: "🎭", name: "Creative Arts" },
+      { id: "teaching",      icon: "📚", name: "Teaching" },
+      { id: "banking",       icon: "🏦", name: "Banking" },
+    ];
+
+    const grid = document.getElementById("categoryGrid");
+
+    categories.forEach(cat => {
+      const card = document.createElement("div");
+      card.className = "cat-card";
+      card.innerHTML = `
+        <span class="cat-icon">${cat.icon}</span>
+        <span class="cat-name">${cat.name}</span>
+      `;
+     card.onclick = () => {
+  window.location.href = cat.id + ".html";
+};
+      grid.appendChild(card);
+    });
+  </script>
+
+</body>
 </html>
