@@ -82,25 +82,25 @@ const careerData = {
     medical : [
         {name: "Doctor", image: "https://cdn-icons-png.flaticon.com/128/2785/2785482.png", page: "medical/doctor.html"},    
         {name: "Nurse", image: "https://cdn-icons-png.flaticon.com/128/3209/3209070.png", page: "medical/nurse.html"},
-        {name: "Pharmacist", image: "https://cdn-icons-png.flaticon.com/128/6260/6260388.png", page: "medical/pharmacist.html"},
-        {name: "Medical Researcher", image: "https://cdn-icons-png.flaticon.com/128/6401/6401547.png", page: "medical/researcher.html"},
+        {name: "Pharmacist", image: "https://cdn-icons-png.flaticon.com/128/6260/6260388.png", page: "medical/pharma.html"},
+        {name: "Medical Researcher", image: "https://cdn-icons-png.flaticon.com/128/6401/6401547.png", page: "medical/medicalResearcher.html"},
         {name: "Public Health Official", image: "https://cdn-icons-png.flaticon.com/128/6310/6310274.png", page: "medical/publichealth.html"}
     ],
 
     teaching : [
         {name: "School Teacher", image: "https://cdn-icons-png.flaticon.com/128/5369/5369664.png", page: "teaching/schlTeacher.html"},    
-        {name: "College Professor", image: "https://cdn-icons-png.flaticon.com/512/190/190411.png", page: "teaching/clgProf.html"},    
-        {name: "Online Tutor", image: "https://cdn-icons-png.flaticon.com/512/2972/2972185.png", page: "teaching/onlineTutor.html"},
-        {name: "Educational Consultant", image: "https://cdn-icons-png.flaticon.com/512/2331/2331970.png", page: "teaching/eduConsultant.html"},
-        {name: "Curriculum Developer", image: "https://cdn-icons-png.flaticon.com/512/3135/3135755.png", page: "teaching/curriculumDev.html"}   
+        {name: "College Professor", image: "https://cdn-icons-png.flaticon.com/128/8443/8443259.png", page: "teaching/clgProf.html"},    
+        {name: "Online Tutor", image: "https://cdn-icons-png.flaticon.com/128/14670/14670402.png", page: "teaching/onlineTutor.html"},
+        {name: "Educational Consultant", image: "https://cdn-icons-png.flaticon.com/128/13540/13540654.png", page: "teaching/eduConsultant.html"},
+        {name: "Curriculum Developer", image: "https://cdn-icons-png.flaticon.com/128/14661/14661538.png", page: "teaching/curriculumDev.html"}   
     ],
 
     banking : [
-        {name: "Investment Banker", image: "https://cdn-icons-png.flaticon.com/512/3063/3063821.png", page: "banking/investmentB.html"},    
-        {name: "Financial Analyst", image: "https://cdn-icons-png.flaticon.com/512/190/190411.png", page: "banking/financialAnalyst.html"},
-        {name: "Bank Manager", image: "https://cdn-icons-png.flaticon.com/512/2972/2972185.png", page: "banking/manager.html"},
-        {name: "Loan Officer", image: "https://cdn-icons-png.flaticon.com/512/2331/2331970.png", page: "banking/loanOfficer.html"},
-        {name: "Financial Advisor", image: "https://cdn-icons-png.flaticon.com/512/3135/3135755.png", page: "banking/financialAdvisor.html"}
+        {name: "Investment Banker", image: "https://cdn-icons-png.flaticon.com/128/18035/18035617.png", page: "banking/investmentB.html"},    
+        {name: "Financial Analyst", image: "https://cdn-icons-png.flaticon.com/128/4256/4256900.png", page: "banking/financialAnalyst.html"},
+        {name: "Bank Manager", image: "https://cdn-icons-png.flaticon.com/128/13767/13767288.png", page: "banking/manager.html"},
+        {name: "Loan Officer", image: "https://cdn-icons-png.flaticon.com/128/17463/17463865.png", page: "banking/loanOfficer.html"},
+        {name: "Financial Advisor", image: "https://cdn-icons-png.flaticon.com/128/16648/16648537.png", page: "banking/financialAdvisor.html"}
     ],
 
     arts : [
@@ -120,42 +120,42 @@ const careerData = {
     ],
 
     business : [
-        {name: "Entrepreneur", image: "https://cdn-icons-png.flaticon.com/512/3063/3063821.png", page: "business/entrepreneur.html"},    
-        {name: "Marketing Manager", image: "https://cdn-icons-png.flaticon.com/512/190/190411.png", page: "business/marketing.html"},
-        {name: "Sales Manager", image: "https://cdn-icons-png.flaticon.com/512/2972/2972185.png", page: "business/sales.html"},
-        {name: "HR Manager", image: "https://cdn-icons-png.flaticon.com/512/2331/2331970.png", page: "business/hr.html"},
-        {name: "Management Consultant", image: "https://cdn-icons-png.flaticon.com/512/3135/3135755.png", page: "business/consultant.html"}        
+        {name: "Entrepreneur", image: "https://cdn-icons-png.flaticon.com/128/10266/10266266.png", page: "business/entrepreneur.html"},    
+        {name: "Marketing Manager", image: "https://cdn-icons-png.flaticon.com/128/1998/1998087.png", page: "business/marketing.html"},
+        {name: "Sales Manager", image: "https://cdn-icons-png.flaticon.com/128/10334/10334217.png", page: "business/sales.html"},
+        {name: "HR Manager", image: "https://cdn-icons-png.flaticon.com/128/5502/5502051.png", page: "business/hr.html"},
+        {name: "Management Consultant", image: "https://cdn-icons-png.flaticon.com/128/17536/17536990.png", page: "business/consultant.html"}        
     ],
 
     publicSafety : [
-        {name: "Police Officer", image: "https://cdn-icons-png.flaticon.com/512/3063/3063821.png", page: "publicSafety/police.html"},    
-        {name: "Firefighter", image: "https://cdn-icons-png.flaticon.com/512/190/190411.png", page: "publicSafety/fireFighter.html"},
-        {name: "Paramedic", image: "https://cdn-icons-png.flaticon.com/512/2972/2972185.png", page: "publicSafety/paramedic.html"},
-        {name: "Security Guard", image: "https://cdn-icons-png.flaticon.com/512/2331/2331970.png", page: "publicSafety/security.html"},
-        {name: "Emergency Dispatcher", image: "https://cdn-icons-png.flaticon.com/512/3135/3135755.png", page: "publicSafety/dispatcher.html"}
+        {name: "Police Officer", image: "https://cdn-icons-png.flaticon.com/128/2333/2333235.png", page: "publicSafety/police.html"},    
+        {name: "Firefighter", image: "https://cdn-icons-png.flaticon.com/128/12349/12349658.png", page: "publicSafety/fireFighter.html"},
+        {name: "Paramedic", image: "https://cdn-icons-png.flaticon.com/128/9747/9747060.png", page: "publicSafety/paramedic.html"},
+        {name: "Security Guard", image: "https://cdn-icons-png.flaticon.com/128/2472/2472632.png", page: "publicSafety/security.html"},
+        {name: "Emergency Dispatcher", image: "https://cdn-icons-png.flaticon.com/128/2991/2991174.png", page: "publicSafety/dipatcher.html"}
     ],
 
     law : [
-        {name: "Lawyer", image: "https://cdn-icons-png.flaticon.com/512/3063/3063821.png", page: "law/lawyer.html"},    
-        {name: "Judge", image: "https://cdn-icons-png.flaticon.com/512/190/190411.png", page: "law/judge.html"},
-        {name: "Legal Consultant", image: "https://cdn-icons-png.flaticon.com/512/2972/2972185.png", page: "law/consultant.html"},
-        {name: "Paralegal", image: "https://cdn-icons-png.flaticon.com/512/2331/2331970.png", page: "law/paraLegal.html"},
-        {name: "Corporate Counsel", image: "https://cdn-icons-png.flaticon.com/512/3135/3135755.png", page: "law/corporate.html"}
+        {name: "Lawyer", image: "https://cdn-icons-png.flaticon.com/128/3611/3611429.png", page: "law/lawyer.html"},    
+        {name: "Judge", image: "https://cdn-icons-png.flaticon.com/128/719/719344.png", page: "law/judge.html"},
+        {name: "Legal Consultant", image: "https://cdn-icons-png.flaticon.com/128/18569/18569888.png", page: "law/consultant.html"},
+        {name: "Paralegal", image: "https://cdn-icons-png.flaticon.com/128/4252/4252349.png", page: "law/paraLegal.html"},
+        {name: "Corporate Counsel", image: "https://cdn-icons-png.flaticon.com/128/12269/12269010.png", page: "law/corporate.html"}
     ],
     transportation : [
-        {name: "Pilot", image: "https://cdn-icons-png.flaticon.com/512/3063/3063821.png", page: "transport/pilot.html"},    
-        {name: "Air Traffic Controller", image: "https://cdn-icons-png.flaticon.com/512/190/190411.png", page: "transport/atc.html"},
-        {name: "Logistics Manager", image: "https://cdn-icons-png.flaticon.com/512/2972/2972185.png", page: "transport/logistics.html"},  
-        {name: "Supply Chain Analyst", image: "https://cdn-icons-png.flaticon.com/512/2331/2331970.png", page: "transport/supplyChain.html"},
-        {name: "Transportation Planner", image: "https://cdn-icons-png.flaticon.com/512/3135/3135755.png", page: "transport/planner.html"}
+        {name: "Pilot", image: "https://cdn-icons-png.flaticon.com/128/1995/1995474.png", page: "transport/pilot.html"},    
+        {name: "Air Traffic Controller", image: "https://cdn-icons-png.flaticon.com/128/6008/6008834.png", page: "transport/atc.html"},
+        {name: "Logistics Manager", image: "https://cdn-icons-png.flaticon.com/128/10951/10951881.png", page: "transport/logistics.html"},  
+        {name: "Supply Chain Analyst", image: "https://cdn-icons-png.flaticon.com/128/11000/11000372.png", page: "transport/supplyChain.html"},
+        {name: "Transportation Planner", image: "https://cdn-icons-png.flaticon.com/128/2973/2973200.png", page: "transport/planner.html"}
     ],
 
     creative : [
-        {name: "Writer", image: "https://cdn-icons-png.flaticon.com/512/3063/3063821.png", page: "creative/writer.html"},    
-        {name: "Musician", image: "https://cdn-icons-png.flaticon.com/512/190/190411.png", page: "creative/musician.html"},
-        {name: "Actor", image: "https://cdn-icons-png.flaticon.com/512/2972/2972185.png", page: "creative/actor.html"},
-        {name: "Director", image: "https://cdn-icons-png.flaticon.com/512/2331/2331970.png", page: "creative/director.html"},
-        {name: "Artist", image: "https://cdn-icons-png.flaticon.com/512/3135/3135755.png", page: "creative/artist.html"}
+        {name: "Writer", image: "https://cdn-icons-png.flaticon.com/128/210/210614.png", page: "creative/writer.html"},    
+        {name: "Musician", image: "https://cdn-icons-png.flaticon.com/128/12331/12331160.png", page: "creative/musician.html"},
+        {name: "Actor", image: "https://cdn-icons-png.flaticon.com/128/1154/1154989.png", page: "creative/actor.html"},
+        {name: "Director", image: "https://cdn-icons-png.flaticon.com/128/6347/6347912.png", page: "creative/director.html"},
+        {name: "Artist", image: "https://cdn-icons-png.flaticon.com/128/5601/5601008.png", page: "creative/artist.html"}
     ],  
     
 };
