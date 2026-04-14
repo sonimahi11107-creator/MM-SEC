@@ -3441,3 +3441,30 @@ footer strong {
   .category-hero-content { padding: 0 24px 36px; }
   .category-grid-section { padding: 32px 20px; }
 }
+
+.search-box {
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+}
+
+.search-box input {
+  padding: 10px;
+  width: 250px;
+  border: 2px solid #ccc;
+  border-radius: 8px 0 0 8px;
+  outline: none;
+}
+
+.search-box button {
+  padding: 10px 15px;
+  border: none;
+  background-color: #4CAF50;
+  color: white;
+  border-radius: 0 8px 8px 0;
+  cursor: pointer;
+}
+
+.search-box button:hover {
+  background-color: #45a049;
+}

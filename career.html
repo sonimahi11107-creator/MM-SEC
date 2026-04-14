@@ -6,6 +6,123 @@
   <title>Career Selection | MakeMyCareer</title>
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="career.css">
+  <style>
+    /* ===== SEARCH BAR ===== */
+    .search-wrapper {
+      max-width: 520px;
+      margin: 0 auto 2rem;
+      position: relative;
+    }
+
+    .search-wrapper input {
+      width: 100%;
+      padding: 14px 80px 14px 20px;
+      border: 2px solid var(--border);
+      border-radius: 999px;
+      font-family: 'DM Sans', sans-serif;
+      font-size: 0.95rem;
+      color: var(--ink);
+      background: var(--white);
+      outline: none;
+      transition: border-color 0.2s, box-shadow 0.2s;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .search-wrapper input:focus {
+      border-color: var(--sage);
+      box-shadow: 0 0 0 3px rgba(45, 106, 79, 0.12);
+    }
+
+    .search-wrapper input::placeholder { color: var(--muted); }
+
+    .search-clear {
+      display: none;
+      position: absolute;
+      right: 16px;
+      top: 50%;
+      transform: translateY(-50%);
+      background: var(--border);
+      border: none;
+      cursor: pointer;
+      font-size: 0.75rem;
+      color: var(--ink);
+      line-height: 1;
+      padding: 4px 8px;
+      border-radius: 999px;
+      font-family: 'DM Sans', sans-serif;
+      font-weight: 600;
+    }
+    .search-clear:hover { background: #ddd; }
+    .search-clear.visible { display: block; }
+
+    /* ===== SEARCH RESULTS PANEL ===== */
+    .search-results-panel { display: none; margin-bottom: 2rem; }
+    .search-results-panel.active { display: block; }
+
+    .search-results-panel h3 {
+      font-family: 'Fraunces', serif;
+      font-size: 1rem;
+      font-weight: 700;
+      color: var(--ink);
+      margin-bottom: 12px;
+      text-align: center;
+    }
+    .search-results-panel h3 span { color: var(--sage); }
+
+    .search-results-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+      gap: 10px;
+    }
+
+    .search-result-card {
+      background: var(--white);
+      border: 1.5px solid var(--border);
+      border-radius: var(--radius-sm);
+      padding: 1rem 0.75rem;
+      cursor: pointer;
+      text-align: center;
+      transition: border-color 0.15s, transform 0.15s, box-shadow 0.15s;
+    }
+    .search-result-card:hover {
+      border-color: var(--mint);
+      transform: translateY(-3px);
+      box-shadow: var(--shadow-sm);
+      background: #f6fdf9;
+    }
+    .search-result-card img {
+      width: 40px; height: 40px;
+      margin-bottom: 8px;
+      object-fit: contain;
+    }
+    .search-result-card p {
+      font-size: 12px;
+      font-weight: 600;
+      color: var(--ink);
+      margin-bottom: 3px;
+    }
+    .result-category {
+      font-size: 10px;
+      font-weight: 500;
+      color: var(--muted);
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+    }
+
+    .no-results {
+      text-align: center;
+      padding: 2rem;
+      color: var(--muted);
+      font-size: 0.9rem;
+      grid-column: 1 / -1;
+    }
+
+    @media (max-width: 600px) {
+      .search-results-grid {
+        grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+      }
+    }
+  </style>
 </head>
 <body>
 
@@ -13,9 +130,24 @@
 
     <div class="career-page-header">
       <h1>What's your career interest?</h1>
-      <p>Select a domain below to explore career paths</p>
+      <p>Select a domain below or search for any specific career</p>
     </div>
 
+    <!-- SEARCH BAR -->
+    <div class="search-wrapper">
+      <input type="text" id="searchInput"
+             placeholder="Search careers e.g. Pilot, Doctor, Lawyer..."
+             autocomplete="off">
+      <button class="search-clear" id="searchClear" onclick="clearSearch()">✕ Clear</button>
+    </div>
+
+    <!-- SEARCH RESULTS (shown only when searching) -->
+    <div class="search-results-panel" id="searchResultsPanel">
+      <h3>Results for "<span id="searchQuery"></span>"</h3>
+      <div class="search-results-grid" id="searchResultsGrid"></div>
+    </div>
+
+    <!-- CATEGORY GRID (shown by default) -->
     <div class="category-grid" id="categoryGrid"></div>
 
     <a href="index.html" class="back-link">← Back to Home</a>
@@ -24,6 +156,7 @@
 
   <script src="script.js"></script>
   <script>
+    // ===== BUILD CATEGORY CARDS =====
     const categories = [
       { id: "technology",    icon: "💻", name: "Technology" },
       { id: "medical",       icon: "🏥", name: "Medical" },
@@ -40,7 +173,6 @@
     ];
 
     const grid = document.getElementById("categoryGrid");
-
     categories.forEach(cat => {
       const card = document.createElement("div");
       card.className = "cat-card";
@@ -48,10 +180,85 @@
         <span class="cat-icon">${cat.icon}</span>
         <span class="cat-name">${cat.name}</span>
       `;
-     card.onclick = () => {
-  window.location.href = cat.id + ".html";
-};
+      card.onclick = () => { window.location.href = cat.id + ".html"; };
       grid.appendChild(card);
+    });
+
+    // ===== SEARCH =====
+    const searchInput  = document.getElementById("searchInput");
+    const searchClear  = document.getElementById("searchClear");
+    const resultsPanel = document.getElementById("searchResultsPanel");
+    const resultsGrid  = document.getElementById("searchResultsGrid");
+    const searchQuery  = document.getElementById("searchQuery");
+    const categoryGrid = document.getElementById("categoryGrid");
+
+    const categoryNames = {
+      technology: "Technology", medical: "Medical", government: "Government",
+      business: "Business", arts: "Arts & Design", defence: "Defence",
+      publicSafety: "Public Safety", law: "Law & Legal",
+      transportation: "Transportation", creative: "Creative Arts",
+      teaching: "Teaching", banking: "Banking"
+    };
+
+    function getAllCareers() {
+      const all = [];
+      for (const [category, careers] of Object.entries(careerData)) {
+        careers.forEach(career => all.push({ ...career, category }));
+      }
+      return all;
+    }
+
+    function doSearch(query) {
+      query = query.trim();
+      if (query.length === 0) { clearSearch(); return; }
+
+      searchClear.classList.add("visible");
+      categoryGrid.style.display = "none";
+      resultsPanel.classList.add("active");
+      searchQuery.textContent = query;
+
+      const q = query.toLowerCase();
+      const matches = getAllCareers().filter(c =>
+        c.name.toLowerCase().includes(q) ||
+        (categoryNames[c.category] || "").toLowerCase().includes(q)
+      );
+
+      resultsGrid.innerHTML = "";
+
+      if (matches.length === 0) {
+        resultsGrid.innerHTML = `
+          <div class="no-results">
+            😕 No results for "<strong>${query}</strong>".<br>Try a different keyword.
+          </div>`;
+        return;
+      }
+
+      matches.forEach(career => {
+        const card = document.createElement("div");
+        card.className = "search-result-card";
+        card.innerHTML = `
+          <img src="${career.image}" alt="${career.name}"
+               onerror="this.style.display='none'">
+          <p>${career.name}</p>
+          <span class="result-category">${categoryNames[career.category] || career.category}</span>
+        `;
+        card.onclick = () => { window.location.href = career.page; };
+        resultsGrid.appendChild(card);
+      });
+    }
+
+    function clearSearch() {
+      searchInput.value = "";
+      searchClear.classList.remove("visible");
+      categoryGrid.style.display = "";
+      resultsPanel.classList.remove("active");
+      resultsGrid.innerHTML = "";
+    }
+
+    // Live search on every keystroke
+    searchInput.addEventListener("input", function () { doSearch(this.value); });
+    searchInput.addEventListener("keydown", function (e) {
+      if (e.key === "Escape") clearSearch();
     });
   </script>
 
