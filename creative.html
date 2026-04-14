@@ -1,26 +1,47 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title> Creative Careers </title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
- 
-         <link rel="stylesheet" href="style.css">
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Creative Careers — MakeMyCareer</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,300;0,900;1,300&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
 
-          <script>
-                document.addEventListener("DOMContentLoaded", function() {
-                    loadCareersByCategory("creative");    
-                });
-            </script>
-    </head>
-    <body>
-         <h1>Creative Career Options</h1>
+  <nav class="navbar">
+    <h2>Make<span style="color:#e9c46a">My</span>Career</h2>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="career.html">Careers</a></li>
+      <li><a href="login.html">Login</a></li>
+      <li><a href="register.html">Register</a></li>
+    </ul>
+  </nav>
 
-         <div class="form-container">
-            <!-- Cards will come here -->   
-            <div id="careerContainer" class="card-container"></div>
-        </div>
-        <a href="career.html" class="back-link">← Back</a>
+  <!-- HERO -->
+  <div class="category-hero">
+    <div class="category-hero-bg" style="background-image: url('https://t3.ftcdn.net/jpg/01/63/17/10/240_F_163171020_374d88Xvxbb3mLIPu4DWhlY9brgJ11pu.jpg');"></div>
+    <div class="category-hero-content">
+      <span class="category-hero-tag">🎭 Creative Domain</span>
+      <h1>Creative &amp; <em>Media</em> Careers</h1>
+      <p>Write, perform and create content that moves the world</p>
+    </div>
+  </div>
 
-        <script src="script.js"></script>
-    </body>
+  <!-- CARDS — loaded by script.js loadCareersByCategory() -->
+  <div class="category-grid-section">
+    <div id="careerContainer" class="card-container"></div>
+  </div>
+
+  <div class="category-back">
+    <a href="career.html">← Back to all careers</a>
+  </div>
+
+  <script src="script.js"></script>
+  <script>
+    loadCareersByCategory("creative");
+  </script>
+
+</body>
 </html>
